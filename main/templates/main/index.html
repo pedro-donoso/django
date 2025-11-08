@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %} 
+{% load static %} 
+
+{% block title %}Inicio - Mi Sitio Web{% endblock %} 
+
+{% block content %}
+<!-- Hero Section -->
+<div class="jumbotron-custom">
+  <div class="container text-center">
+    <h1 class="hero-title">Bienvenido a MiSitio</h1>
+    <p class="lead fs-4">Soluciones digitales innovadoras para tu negocio</p>
+    <a href="{% url 'services' %}" class="btn btn-light btn-lg mt-3 btn-custom">
+      Descubre Nuestros Servicios
+    </a>
+  </div>
+</div>
+
+<!-- Features -->
+<div class="container section-padding">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <h5 class="card-title text-primary">Diseño Moderno</h5>
+          <p class="card-text">
+            Interfaces atractivas y completamente responsivas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <h5 class="card-title text-success">Desarrollo Ágil</h5>
+          <p class="card-text">
+            Soluciones rápidas y eficientes para tu negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
+          <h5 class="card-title text-warning">Soporte Continuo</h5>
+          <p class="card-text">
+            Acompañamiento durante y después del desarrollo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
